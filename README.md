@@ -17,7 +17,7 @@ SOFTWARE DESCRIPTION
 --------------------
 
 This software is based on:
-1. A client that reads the temperature values from any of the supported thermometers (Cryocon 18, SI-9300, SI Twickenham, or any similar) using their proprietary protocols; and
+1. A client that reads the temperature values from any of the supported thermometers (Cryocon 18, SI-9300, SI Twickenham, CRYOGENIC, or any similar) using their proprietary protocols; and
 2. A Modbus-TCP server that shares the temperature reading and some diagnostic information.
 
 This version of the software can read up to 6 thermometers simultaneously, each with 8 temperature channels. Each temperature values is stored as a 32 bits float value (standard IEEE-754), which correspond to 2 Modbus register.
