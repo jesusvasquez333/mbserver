@@ -35,21 +35,19 @@
 /*********** OUTPUT ERROR CODE DEFINITIONS *******************/
 /*************************************************************/
 
-#define	NO_ERR_CODE						0		// No error
+#define	NO_ERR_CODE				0		// No error
 
 #define	ERR_CODE_INVALID_TCP_PORT		-1		// Invalid TCP port on configuration file
 #define	ERR_CODE_INVALID_IP_ADDESS		-2		// Invalid IP Addess on configuration file
-#define ERR_CODE_NO_SERVERS				-3		// No server configured
+#define ERR_CODE_NO_SERVERS			-3		// No server configured
 #define ERR_CODE_TOOMANY_SERVERS		-4		// Too many server on configuration files
 #define ERR_CODE_THR_MALLOC_FAIL		-5		// Thread allocation fail
 #define ERR_CODE_MB_MALLOC_FAIL			-6		// Modbus memory mapping allocation fail
-#define ERR_CODE_TCP_THRPAR_MALLOC_FAIL	-7		// TCP thread parameter allocation fail
-#define ERR_CODE_RS1_THRPAR_MALLOC_FAIL	-8		// RS232 (type 1) thread parameter allocation fail
-#define ERR_CODE_RS2_THRPAR_MALLOC_FAIL	-9		// RS232 (type 2) thread parameter allocation fail
+#define ERR_CODE_TCP_THRPAR_MALLOC_FAIL		-7		// TCP thread parameter allocation fail
+#define ERR_CODE_RS1_THRPAR_MALLOC_FAIL		-8		// RS232 (type 1) thread parameter allocation fail
+#define ERR_CODE_RS2_THRPAR_MALLOC_FAIL		-9		// RS232 (type 2) thread parameter allocation fail
 #define ERR_CODE_MB_CON_ALLOC_FAIL		-10		// Libmodbus context allocation fail
 #define ERR_CODE_SELECT_FAIL			-11		// Select() function fail
-#define	ERR_CODE_SERIAL_PORT_OPEN_FAIL	-12
-#define	ERR_CODE_
-#define	ERR_CODE_
+#define	ERR_CODE_SERIAL_PORT_OPEN_FAIL		-12		// Error opening serial port
 
-#define	ERR_SIGNAL_CAPTURE				-20		// End signal captured
+#define	ERR_SIGNAL_CAPTURE			-20		// End signal captured

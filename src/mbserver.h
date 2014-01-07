@@ -53,10 +53,10 @@
 /*************************************************************/
 /*********** GENERAL CONFIGURATION ***************************/
 /*************************************************************/
-#define SERVER_FILE_TCP				"/home/pi/servers_tcp.txt"		// File where the instruments directions are
-#define SERVER_FILE_232_T1			"/home/pi/servers_232_t1.txt"	// File where the instruments directions are
-#define SERVER_FILE_232_T2			"/home/pi/servers_232_t2.txt"	// File where the instruments directions are
-#define MAX_NUM_SERVERS 			6								// Max number of data servers (istruments) 
+#define SERVER_FILE_TCP		"/home/pi/servers_tcp.txt"	// File where the instruments directions are
+#define SERVER_FILE_232_T1	"/home/pi/servers_232_t1.txt"	// File where the instruments directions are
+#define SERVER_FILE_232_T2	"/home/pi/servers_232_t2.txt"	// File where the instruments directions are
+#define MAX_NUM_SERVERS 	6				// Max number of data servers (istruments) 
 
 /*************************************************************/
 /*********** GENERAL DEFINITIONS *****************************/
@@ -73,19 +73,19 @@
 /*************************************************************/
 /*********** MODBUS SERVER CONFIGURATION *********************/
 /*************************************************************/
-#define NB_CONNECTION				5								// Max number of MODBUS client connections
-#define MB_BASE_ADDR				0								// Strating ModBus address for the temperature readings
-#define MB_BASE_ADDR_ERROR			96								// Strating ModBus address for the communication error register
-#define MB_BASE_ADDR_ALLARM			98								// Strating ModBus address for the sensor error register
-#define MB_TCP_PORT					502								// Standard TCP port for MODBUS server
-#define MB_BITS_NB					0								// Number of "Coil" modbus register to allocate
-#define MB_BITS_ADR					0								// Start address for "Coil" modbus register to allocate
-#define MB_INPUT_BITS_NB			0								// Number of "Discrete Inputs" modbus register to allocate
-#define MB_INPUT_BITS_ADD			0								// Start address for "Discrete Inputs" modbus to allocate
-#define MB_REGISTERS_NB				150								// Number of "Holding Registers" modbus register to allocate
-#define MB_REGISTERS_ADD			0								// Start address for "Holding Registers" modbus register to allocate
-#define MB_INPUT_REGISTERS_NB		0								// Number of "Input Register" modbus register to allocate
-#define MB_INPUT_REGISTERS_ADD		0								// Start address for "Input Register" modbus register to allocate
+#define NB_CONNECTION			5	// Max number of MODBUS client connections
+#define MB_BASE_ADDR			0	// Strating ModBus address for the temperature readings
+#define MB_BASE_ADDR_ERROR		96	// Strating ModBus address for the communication error register
+#define MB_BASE_ADDR_ALLARM		98	// Strating ModBus address for the sensor error register
+#define MB_TCP_PORT			502	// Standard TCP port for MODBUS server
+#define MB_BITS_NB			0	// Number of "Coil" modbus register to allocate
+#define MB_BITS_ADR			0	// Start address for "Coil" modbus register to allocate
+#define MB_INPUT_BITS_NB		0	// Number of "Discrete Inputs" modbus register to allocate
+#define MB_INPUT_BITS_AD		0	// Start address for "Discrete Inputs" modbus to allocate
+#define MB_REGISTERS_NB			150	// Number of "Holding Registers" modbus register to allocate
+#define MB_REGISTERS_ADD		0	// Start address for "Holding Registers" modbus register to allocate
+#define MB_INPUT_REGISTERS_NB		0	// Number of "Input Register" modbus register to allocate
+#define MB_INPUT_REGISTERS_ADD		0	// Start address for "Input Register" modbus register to allocate
 /*************************************************************/
 /*********** GLOBAL VARIABLES ********************************/
 /*************************************************************/
@@ -130,8 +130,8 @@ struct arg_struct_232
 /*************************************************************/
 /******************* MACROS **********************************/
 /*************************************************************/
-#define	SET_BIT(word,bit_pos)			word |= (1 << bit_pos);
-#define	CLEAR_BIT(word,bit_pos)			word &= (~(1 << bit_pos));
+#define	SET_BIT(word,bit_pos)		word |= (1 << bit_pos);
+#define	CLEAR_BIT(word,bit_pos)		word &= (~(1 << bit_pos));
 
 /*************************************************************/
 /*********** FUNCTIONS ***************************************/
