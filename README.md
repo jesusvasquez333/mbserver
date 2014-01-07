@@ -6,12 +6,9 @@ INTRODUCTION
 
 Modbus interface for temperature sensors CRYCON18, SI-9300 and SI Twickenham (or any similar). 
 
-This version reads the temperature values from any of the configured 
-instrument at a fixed, defined rate and then writes these value onto 
-local memory that can be access from a remote Modbus/TCP client.
+This version reads the temperature values from any of the configured instrument at a fixed, defined rate and then writes these value onto local memory that can be access from a remote Modbus/TCP client.
 
-It uses Stéphane Raimbault's 
-<stephane.raimbault@gmail.com> Modbus C library libmodbus. 
+It uses Stéphane Raimbault's <stephane.raimbault@gmail.com> Modbus C library libmodbus. 
 
 Copyright © 2013 Jesus Vasquez <jesusvasquez333@gmail.com>
 
