@@ -33,43 +33,43 @@ The first 96 Modbus registers contain the temperature reading from the 6 instrum
 
 The 97th Modbus register contains information about the communication status with each instrument. The first 6 bits of the LSB indicate is the corresponding thermometer is enable (=1) or disable (=0). On the other hand, the first 6 bits of the MSB indicate if the corresponding thermometer communication status is OK (=0) or not (=1).
 
-	0	thermometer 0 enabled (0 = no; 1 = yes)
-	1	thermometer 1 enabled (0 = no; 1 = yes)
-L	2	thermometer 2 enabled (0 = no; 1 = yes)
-S	3	thermometer 3 enabled (0 = no; 1 = yes)
-B	4	thermometer 4 enabled (0 = no; 1 = yes)
-	5	thermometer 5 enabled (0 = no; 1 = yes)
-	6	- not used -
-	7	- not used -
-	0	thermometer 0 communication status (0 = ok; 1 = error)
-	1	thermometer 1 communication status (0 = ok; 1 = error)
-M	2	thermometer 2 communication status (0 = ok; 1 = error)
-S	3	thermometer 3 communication status (0 = ok; 1 = error)
-B	4	thermometer 4 communication status (0 = ok; 1 = error)
-	5	thermometer 5 communication status (0 = ok; 1 = error)
-	6	- not used -
-	7	- not used -							
+		0	thermometer 0 enabled (0 = no; 1 = yes)
+		1	thermometer 1 enabled (0 = no; 1 = yes)
+	L	2	thermometer 2 enabled (0 = no; 1 = yes)
+	S	3	thermometer 3 enabled (0 = no; 1 = yes)
+	B	4	thermometer 4 enabled (0 = no; 1 = yes)
+		5	thermometer 5 enabled (0 = no; 1 = yes)
+		6	- not used -
+		7	- not used -
+		0	thermometer 0 communication status (0 = ok; 1 = error)
+		1	thermometer 1 communication status (0 = ok; 1 = error)
+	M	2	thermometer 2 communication status (0 = ok; 1 = error)
+	S	3	thermometer 3 communication status (0 = ok; 1 = error)
+	B	4	thermometer 4 communication status (0 = ok; 1 = error)
+		5	thermometer 5 communication status (0 = ok; 1 = error)
+		6	- not used -
+		7	- not used -							
 
 The 98th Modbus register is not used
 
 The next 6 Modbus registers indicate the status of the temperature channels for each thermometer. The 99th register contain the status for the thermometer 0, the 100th for the thermometer 1, and so on until the 104th for the thermometer 5. In each register, the 8 bits of the LSB indicate if the corresponding sensor is present (=0) or not (=1), while the 8 bits of the MSB indicate if the corresponding measurement is out of range (=1) or normal (=0).
 
-	0	Sensor 0 is present (0 = yes; 1 = no)
-	1	Sensor 1 is present (0 = yes; 1 = no)
-L	2	Sensor 2 is present (0 = yes; 1 = no)
-S	3	Sensor 3 is present (0 = yes; 1 = no)
-B	4	Sensor 4 is present (0 = yes; 1 = no)
-	5	Sensor 5 is present (0 = yes; 1 = no)
-	6	Sensor 6 is present (0 = yes; 1 = no)
-	7	Sensor 7 is present (0 = yes; 1 = no)
-	0	Measurement 0 is out of range (0 = no; 1 = yes)
-	1	Measurement 1 is out of range (0 = no; 1 = yes)
-M	2	Measurement 2 is out of range (0 = no; 1 = yes)
-S	3	Measurement 3 is out of range (0 = no; 1 = yes)
-B	4	Measurement 4 is out of range (0 = no; 1 = yes)
-	5	Measurement 5 is out of range (0 = no; 1 = yes)
-	6	Measurement 6 is out of range (0 = no; 1 = yes)
-	7	Measurement 7 is out of range (0 = no; 1 = yes)
+		0	Sensor 0 is present (0 = yes; 1 = no)
+		1	Sensor 1 is present (0 = yes; 1 = no)
+	L	2	Sensor 2 is present (0 = yes; 1 = no)
+	S	3	Sensor 3 is present (0 = yes; 1 = no)
+	B	4	Sensor 4 is present (0 = yes; 1 = no)
+		5	Sensor 5 is present (0 = yes; 1 = no)
+		6	Sensor 6 is present (0 = yes; 1 = no)
+		7	Sensor 7 is present (0 = yes; 1 = no)
+		0	Measurement 0 is out of range (0 = no; 1 = yes)
+		1	Measurement 1 is out of range (0 = no; 1 = yes)
+	M	2	Measurement 2 is out of range (0 = no; 1 = yes)
+	S	3	Measurement 3 is out of range (0 = no; 1 = yes)
+	B	4	Measurement 4 is out of range (0 = no; 1 = yes)
+		5	Measurement 5 is out of range (0 = no; 1 = yes)
+		6	Measurement 6 is out of range (0 = no; 1 = yes)
+		7	Measurement 7 is out of range (0 = no; 1 = yes)
 
 The starting address for the register table by default is set to 0, but can be modify on the mbserver.h header file. It is possible to modify also the position of the status register as well as the number of thermometer and other parameters. 
 
